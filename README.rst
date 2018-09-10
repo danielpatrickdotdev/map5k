@@ -3,9 +3,24 @@ Map 5k
 A browser extension (Chrome, Firefox) for viewing an athlete's parkruns on an
 interactive map.
 
-Installation
-------------
-Download repository as zip file and extract, then:
+Build
+-----
+On linux browse to the root directory of the repository and run:
+./build.sh
+
+This will create the following files and folders one directory up:
+  build/
+    chrome/
+    firefox/
+    map5k-chrome.zip
+    map5k-firefox.zip
+
+The chrome and firefox folders contain Extensions which can be installed
+locally; the zips are ready to be uploaded to Chrome store and Firefox
+developer hub.
+
+Install locally
+---------------
 
 Chrome
 ^^^^^^
