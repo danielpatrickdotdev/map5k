@@ -9,6 +9,7 @@ On linux browse to the root directory of the repository and run:
 ./build.sh
 
 This will create the following files and folders one directory up:
+::
   build/
     chrome/
     firefox/
