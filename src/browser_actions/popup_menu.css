@@ -1,0 +1,74 @@
+html, body {
+  background-color: #ffffff;
+  border-bolor:rgba(12, 12, 13, 0.2);
+  padding: 0;
+  margin: 0;
+  max-height: 90%;
+  width: 220px;
+  font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0c0c0d;
+  cursor: pointer;
+}
+
+.secondary-text {
+  color: #737373;
+}
+
+ul {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: inherit;
+  padding: 10px 16px;
+  margin: 0;
+}
+
+a:hover {
+  background-color: #ededf0;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a.inactive {
+  opacity: 0.4;
+}
+
+a:hover.inactive {
+  cursor: auto;
+  background-color: inherit;
+}
+
+div.menu {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-bolor:rgba(12, 12, 13, 0.2);
+}
+
+.icon {
+  padding-right: 6px;
+  top: 3px;
+  position: relative;
+  fill: #0c0c0d;
+  width: 16px;
+  height: 16px;
+}

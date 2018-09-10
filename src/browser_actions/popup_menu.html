@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/browser_actions/popup_menu.css">
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li id="athlete-results" class="menu-item">
+          <a id="athlete-results-link">
+            <svg class="icon" version="1.1">
+              <use href="/assets/images/icons/fa-solid.svg#chart-bar"/>
+            </svg>
+            <span>Athlete Results</span>
+          </a>
+        </li>
+        <li id="options" class="menu-item">
+          <a id="options-link">
+            <svg class="icon" version="1.1">
+              <use href="/assets/images/icons/fa-solid.svg#sliders-h"/>
+            </svg>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="/assets/js/browser-polyfill.min.js"></script>
+    <script src="/browser_actions/popup_menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+.hidden {
+  display: none;
+}
+.btn:active, .btn:focus, .btn:hover {
+  outline: 0 !important;
+}
+.btn::-moz-focus-inner {
+  border: 0 !important;
+}
+div#map {
+  width: 95%;
+  height: 95%;
+  margin: 12px auto;
+}
+.btn.toggle-map {
+  position: relative;
+  top: 2px;
+  height: 32px;
+  width: 32px;
+  margin: 0 auto;
+  padding: 2px 4px;
+  color: white;
+  background-color: #9E8032;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Darker background on mouse-over */
+.btn.toggle-map:hover {
+  background-color: #6C4E00;
+}
+.btn.toggle-map:not(.hidden) svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn.toggle-map svg {
+  height: 24px;
+  width: 24px;
+  fill: white;
+  padding: 0;
+}
+@-moz-document url-prefix() {
+  .btn.toggle-map svg {
+    margin-left: 1px;
+  }
+}
+#hide-map-btn svg {
+  opacity: .8;
+}
+.filter-btn svg {
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+  margin-left: 1px;
+}
+.filter-dropdown {
+  top: 2.75em;
+  left: 3em;
+  color: rgba(0,60,136,.7);
+  background-color: rgba(255,255,255,.8);
+  text-align: left;
+  padding: 12px;
+}
+.filter-dropdown:hover {
+  background-color: rgba(255,255,255,.9);
+}
+.filter-heading {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+#year-checkboxes label::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#year-checkboxes .checkbox {
+  height: 21px;
+}
+.time-input {
+  height: 21px;
+}
+.time-input::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.time-input input {
+  font-family: monospace;
+  font-size: 12px;
+  display: block;
+  float: left;
+  width: 36px;
+  text-align: right;
+  padding: 2px 6px 1px 5px;
+  height: 12px;
+  color: rgba(0,60,136,.7);
+  border-radius: 2px;
+  border: 1px solid rgba(0,60,136,.7);
+}
+.time-input input.error:not(:focus) {
+  border: 1px solid rgba(255, 0, 0,.7);
+  box-shadow: 0 0 2pt 1pt rgba(255, 0, 0,.6);
+}
+.time-input label {
+  display: block;
+  height: 14px;
+  width: 30px;
+  text-align: left;
+  float: left;
+}
+.time-reset-btn {
+  display: block;
+  float: left;
+  margin: -2px -4px 2px 2px;
+}
+.time-reset-btn,
+.time-reset-btn:hover,
+.time-reset-btn:active,
+.time-reset-btn:focus {
+  background: none !important;
+}
+.time-reset-btn svg {
+  width: 12px;
+  height: 12px;
+  fill: #003C88;
+  fill-opacity: .7;
+}
+.time-reset-btn:hover > svg,
+.time-reset-btn:active > svg,
+.time-reset-btn:focus > svg {
+  filter: drop-shadow( 0 0 3px rgb(68, 136, 255));
+}
+#times-selectors span.error {
+  display: inline-block;
+  width: 90px;
+  color: rgba(255, 0, 0,.7);
+}
+.filter-form-column {
+  float: left;
+}
+.filter-form-column + .filter-form-column {
+  margin-left: 12px;
+}
+#apply-filter-btn {
+  clear: both;
+  position: relative;
+  float: right;
+  margin: 0;
+  padding: 10px;
+  font-size: inherit;
+  font-weight: normal;
+  width: auto;
+  height: auto;
+}
+.filter-btn {
+  top: .5em;
+  left: 3em;
+}
+.ol-control button:focus:not(:hover) {
+  /* fix OpenLayers issue where buttons stay highlighted after click */
+  background-color: rgba(0,60,136,.5);
+}
+
+/* some of the following is just hideous css due to checkbox limitations: see
+https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3
+and
+https://codepen.io/Vestride/pen/dABHx
+for some idea how it ended up like this
+*/
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox label::before {
+  content: "";
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: text-top;
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+  border-radius: 2px;
+  background: white;
+}
+.checkbox input[type="checkbox"]:focus label::before:hover {
+  background: rgb(59, 153, 252) auto 2px;
+}
+.checkbox input[type="checkbox"]:focus label::before {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0,12);
+}
+.checkbox input[type="checkbox"]:checked label::before {
+  box-shadow: rgb(59, 153, 252) auto 2px;
+}
+.checkbox label {
+  display: block;
+  position: relative;
+  padding: 0;
+  height: 21px;
+}
+.checkbox input[type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  display: block;
+  width: 8px;
+  height: 3px;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+}
+.checkbox input[type="checkbox"]:hover + label::before,
+.time-input input:hover {
+  background-color: rgba(221, 238, 255, 1);
+}
+.checkbox input[type="checkbox"]:focus + label::before,
+.time-input input:focus {
+  box-shadow: 0 0 2pt 1pt rgba(68, 136, 255, .6);
+}
