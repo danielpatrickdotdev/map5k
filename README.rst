@@ -45,7 +45,7 @@ The chrome and firefox folders contain the extensions/add-ons for local installa
 
 Chrome
 ------
-1. Browse to the URL chrome://extensions
+1. Browse to the URL `<chrome://extensions>`_.
 2. Ensure "Developer mode" (top right) is selected.
 3. Click "Load unpacked".
 4. Browse to the src folder, then click "Open".
@@ -53,7 +53,7 @@ Chrome
 
 Firefox
 -------
-1. Browse to the URL about:debugging.
+1. Browse to the URL `<about:debugging>`_.
 2. Click "Load Temporary Add-on".
 3. Browse to the src folder and double-click the manifest.json file.
 4. The extension's icon should appear on the menu bar automatically.
